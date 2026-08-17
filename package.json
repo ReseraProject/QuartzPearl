@@ -1,0 +1,26 @@
+{
+  "name": "quartzpearl",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Discord bot for the Resera community, built with discord.js and Bun.",
+  "license": "GPL-2.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "register": "bun src/deploy-commands.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "check": "bun run typecheck && bun test"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "bun": ">=1.3.0"
+  }
+}
